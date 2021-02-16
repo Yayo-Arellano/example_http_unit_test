@@ -7,10 +7,6 @@ the data layer in the presentation layer.
 
 We are going to build a small top headlines app to demonstrate how to unit test https request.
 
-| Success Response | Handle ApiKey Invalid | Handle ApiKey missing |
-| ---------------- | --------------------- | --------------------- |
-| ![Image 1](https://github.com/Yayo-Arellano/example_http_unit_test/blob/master/images/Image%201.png?raw=true) |![Image 2](https://github.com/Yayo-Arellano/example_http_unit_test/blob/master/images/Image%202.png?raw=true) |![Image 3](https://github.com/Yayo-Arellano/example_http_unit_test/blob/master/images/Image%203.png?raw=true) |
-
 # Prerequisites (Optional)
 
 **To run the unit tests is not necessary to get an API key**
@@ -24,3 +20,9 @@ We are going to build a small top headlines app to demonstrate how to unit test 
   ````
 
 - Run the command `pub run build_runner watch --delete-conflicting-outputs` to generate the code. 
+
+# Screenshots
+| Success Response | Handle ApiKey Invalid | Handle ApiKey missing |
+| ---------------- | --------------------- | --------------------- |
+| ![Image 1](https://github.com/Yayo-Arellano/example_http_unit_test/blob/master/images/Image%201.png?raw=true) |![Image 2](https://github.com/Yayo-Arellano/example_http_unit_test/blob/master/images/Image%202.png?raw=true) |![Image 3](https://github.com/Yayo-Arellano/example_http_unit_test/blob/master/images/Image%203.png?raw=true) |
+
