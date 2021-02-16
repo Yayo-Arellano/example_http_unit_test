@@ -2,7 +2,7 @@
 
 Flutter Version: Stable 1.22.6
 
-The main purpose of this example is unit testing https requests. Also, you can see how to handle Exceptions thrown in
+The main purpose of this example is unit testing [https requests](https://pub.dev/packages/http). Also, you can see how to handle Exceptions thrown in
 the data layer in the presentation layer.
 
 We are going to build a small top headlines app to demonstrate how to unit test https request.
