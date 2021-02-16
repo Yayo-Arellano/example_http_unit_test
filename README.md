@@ -9,7 +9,7 @@ We are going to build a small top headlines app to demonstrate how to unit test 
 
 | Success Response | Handle ApiKey Invalid | Handle ApiKey missing |
 | ---------------- | --------------------- | --------------------- |
-| ![Image 1](./images/Image 1.png) |![Image 2](./images/Image 2.png) |![Image 3](./images/Image 3.png) |
+| ![Image 1](https://github.com/Yayo-Arellano/example_http_unit_test/blob/master/images/Image%201.png?raw=true) |![Image 2](https://github.com/Yayo-Arellano/example_http_unit_test/blob/master/images/Image%202.png?raw=true) |![Image 3](https://github.com/Yayo-Arellano/example_http_unit_test/blob/master/images/Image%203.png?raw=true) |
 
 # Prerequisites (Optional)
 
