@@ -2,8 +2,11 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 import 'package:http_unit_test/src/data_provider/response/api_response.dart';
-import 'package:http_unit_test/src/exceptions/custom_exception.dart';
 import 'package:http_unit_test/src/model/article.dart';
+
+class MissingApiKeyException implements Exception {}
+
+class ApiKeyInvalidException implements Exception {}
 
 class NewsProvider {
   static const String _apiKey = 'Change to your own api key';

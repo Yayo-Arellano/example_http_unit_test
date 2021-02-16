@@ -4,7 +4,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart';
 import 'package:http/testing.dart';
 import 'package:http_unit_test/src/data_provider/news_provider.dart';
-import 'package:http_unit_test/src/exceptions/custom_exception.dart';
 
 void main() {
   test('Top headlines response is correct', () async {

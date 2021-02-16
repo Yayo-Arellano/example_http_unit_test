@@ -1,7 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:http_unit_test/src/data_provider/news_provider.dart';
-import 'package:http_unit_test/src/exceptions/custom_exception.dart';
 import 'package:http_unit_test/src/model/article.dart';
 
 void main() async {
@@ -53,7 +52,7 @@ class TopNews extends StatelessWidget {
           }
           return Center(child: CircularProgressIndicator());
         },
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }
