@@ -10,7 +10,7 @@ We are going to build a small top headlines app to demonstrate how to unit test 
 
 | Success Response | Handle ApiKey Invalid | Handle ApiKey missing |
 | ---------------- | --------------------- | --------------------- |
-| ![](images/Image 1.png) |![](images/Image 2.png) |![](images/Image 3.png) |
+| ![](./images/Image 1.png) |![](./images/Image 2.png) |![](./images/Image 3.png) |
 
 # Prerequisites (Optional)
 
