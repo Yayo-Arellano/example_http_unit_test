@@ -9,11 +9,10 @@ part of 'api_response.dart';
 ApiResponse _$ApiResponseFromJson(Map<String, dynamic> json) {
   return ApiResponse()
     ..status = json['status'] as String
-    ..code = json['code'] as String
-    ..articles = (json['articles'] as List)
-        ?.map((e) =>
-            e == null ? null : Article.fromJson(e as Map<String, dynamic>))
-        ?.toList();
+    ..code = json['code'] as String?
+    ..articles = (json['articles'] as List<dynamic>?)
+        ?.map((e) => Article.fromJson(e as Map<String, dynamic>))
+        .toList();
 }
 
 Map<String, dynamic> _$ApiResponseToJson(ApiResponse instance) =>

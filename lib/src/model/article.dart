@@ -4,10 +4,10 @@ part 'article.g.dart';
 
 @JsonSerializable()
 class Article {
-  String title;
-  String author;
-  String description;
-  String urlToImage;
+  late final String title;
+  late final String author;
+  late final String description;
+  late final String? urlToImage;
 
   Article();
 

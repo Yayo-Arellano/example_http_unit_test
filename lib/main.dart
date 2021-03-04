@@ -12,7 +12,10 @@ void main() async {
 class MyApp extends StatelessWidget {
   final NewsProvider newsProvider;
 
-  const MyApp({Key key, this.newsProvider}) : super(key: key);
+  const MyApp({
+    Key? key,
+    required this.newsProvider,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +29,10 @@ class MyApp extends StatelessWidget {
 class TopNews extends StatelessWidget {
   final NewsProvider newsProvider;
 
-  const TopNews({Key key, this.newsProvider}) : super(key: key);
+  const TopNews({
+    Key? key,
+    required this.newsProvider,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -46,8 +52,8 @@ class TopNews extends StatelessWidget {
             return Center(child: Text('Unknown error'));
           } else if (snapshot.hasData) {
             return ListView.builder(
-              itemCount: snapshot.data.length,
-              itemBuilder: (_, int index) => _ListItem(article: snapshot.data[index]),
+              itemCount: snapshot.data!.length,
+              itemBuilder: (_, int index) => _ListItem(article: snapshot.data![index]),
             );
           }
           return Center(child: CircularProgressIndicator());
@@ -60,7 +66,10 @@ class TopNews extends StatelessWidget {
 class _ListItem extends StatelessWidget {
   final Article article;
 
-  const _ListItem({Key key, this.article}) : super(key: key);
+  const _ListItem({
+    Key? key,
+    required this.article,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +80,7 @@ class _ListItem extends StatelessWidget {
           article.urlToImage == null
               ? Container(color: Colors.red, height: 250)
               : CachedNetworkImage(
-                  imageUrl: article.urlToImage,
+                  imageUrl: article.urlToImage!,
                   placeholder: (context, url) => CircularProgressIndicator(),
                   errorWidget: (context, url, error) => Icon(Icons.error),
                 ),

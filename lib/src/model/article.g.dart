@@ -11,7 +11,7 @@ Article _$ArticleFromJson(Map<String, dynamic> json) {
     ..title = json['title'] as String
     ..author = json['author'] as String
     ..description = json['description'] as String
-    ..urlToImage = json['urlToImage'] as String;
+    ..urlToImage = json['urlToImage'] as String?;
 }
 
 Map<String, dynamic> _$ArticleToJson(Article instance) => <String, dynamic>{

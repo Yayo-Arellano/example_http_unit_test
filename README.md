@@ -1,6 +1,6 @@
 # Flutter Example: Unit testing [http](https://pub.dev/packages/http) requests
 
-Flutter Version: Stable 1.22.6
+Flutter Version: Stable 2.0.0
 
 The main purpose of this example is unit testing [https requests](https://pub.dev/packages/http). Also, you can see how to handle Exceptions thrown in
 the data layer in the presentation layer.
@@ -19,7 +19,7 @@ We are going to build a small top headlines app to demonstrate how to unit test 
     static const String _apiKey = 'Change to your own api key';
   ````
 
-- Run the command `pub run build_runner watch --delete-conflicting-outputs` to generate the code. 
+- Run the command `flutter pub run build_runner watch --delete-conflicting-outputs` to generate the code. 
 
 # Screenshots
 | Success Response | Handle ApiKey Invalid | Handle ApiKey missing |

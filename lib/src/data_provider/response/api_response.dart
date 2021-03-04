@@ -5,9 +5,9 @@ part 'api_response.g.dart';
 
 @JsonSerializable()
 class ApiResponse {
-  String status;
-  String code;
-  List<Article> articles;
+  late final String status;
+  late final String? code;
+  late final List<Article>? articles;
 
   ApiResponse();
 

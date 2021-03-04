@@ -16,7 +16,7 @@ class NewsProvider {
 
   final http.Client _httpClient;
 
-  NewsProvider({http.Client httpClient}) : _httpClient = httpClient ?? http.Client();
+  NewsProvider({http.Client? httpClient}) : _httpClient = httpClient ?? http.Client();
 
   Future<List<Article>> topHeadlines(String country) async {
     final result = await _callGetApi(
@@ -26,10 +26,13 @@ class NewsProvider {
         'apiKey': _apiKey,
       },
     );
-    return result.articles;
+    return result.articles!;
   }
 
-  Future<ApiResponse> _callGetApi({String endpoint, Map<String, String> params}) async {
+  Future<ApiResponse> _callGetApi({
+    required String endpoint,
+    required Map<String, String> params,
+  }) async {
     var uri = Uri.https(_baseUrl, endpoint, params);
 
     final response = await _httpClient.get(uri);

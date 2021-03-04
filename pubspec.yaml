@@ -4,25 +4,25 @@ version: 1.0.0+1
 
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
   # https://pub.dev/packages/http
-  http: ^0.12.2
+  http: ^0.13.0
   # https://pub.dev/packages/cached_network_image
-  cached_network_image: ^2.5.0
+  cached_network_image: ^3.0.0-nullsafety
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   # https://pub.dev/packages/build_runner
-  build_runner: ^1.11.1
+  build_runner: ^1.11.5
   # https://pub.dev/packages/json_serializable
-  json_serializable: ^3.5.1
+  json_serializable: ^4.0.2
 
 
 flutter:
